@@ -5,6 +5,7 @@ var person = function(name, yearOfBirth, job){
     this.yearOfBirth = yearOfBirth;
     this.job = job;
 }
+var john = new person('john', 1990, 'teacher'); called instantisation 
 
 // making prototype for function Constructor
 person.prototype.calculateAge = function(){
