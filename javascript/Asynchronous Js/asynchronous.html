@@ -153,37 +153,40 @@
     ////////////////////////////////////////////////////////////////////////////////
     // Making Ajax calls with fetch and promises
 
-    // fetch('http://127.0.0.1:8887/https://www.metaweather.com/api/location/2487956/')
-    //   .then(result => {
-    //       console.log(result);
+    fetch('https://reqres.in/api/users?page=2')
+      .then(result => {
+          console.log(result);
 
-    //       return result.json();
-    //   })
-    //   .then(data => {
-    //       console.log(data);
-    //   })
-    //   .catch(error => {
-    //       console.log(error);
-    //   });
+          return result.json();
+      })
+      .then(data => {
+        //   const reader = data.getReader();
+          console.log(data);
+         
+      })
+      
+      .catch(error => {
+          console.log(error);
+      });
 
 
 /// Ajax call by promises and asyncronous way
-      async function getWeatherAW(woied){
-        try
-        {
-            var result = await fetch(`http://127.0.0.1:8887/https://www.metaweather.com/api/location/${woied}/`); // Starting part here will throw an error
+    //   async function getWeatherAW(woied){
+    //     try
+    //     {
+    //         var result = await fetch(`http://127.0.0.1:8887/https://www.metaweather.com/api/location/${woied}/`); // Starting part here will throw an error
 
-            console.log(result);
+    //         console.log(result);
 
-            const data = await result.json();
-            console.log(data);
-        }
-        catch(error){
-            console.warn(error);
-        }
-      }
+    //         const data = await result.json();
+    //         console.log(data);
+    //     }
+    //     catch(error){
+    //         console.warn(error);
+    //     }
+    //   }
 
-      getWeatherAW(2487956);
+    //   getWeatherAW(2487956);
 
 
 
