@@ -4,4 +4,4 @@ Udemy Course coding challenges
 Here I am practicing the javascript course from Udemy
 
 
-Check forkify for some cool stuff: Note for me
+[forkify] Before using this project, run npm i on cmd.
